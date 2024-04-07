@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\Api\ContactController;
 use App\Http\Controllers\Api\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -26,3 +26,4 @@ Route::get('/projects/{id}',[ProjectController::class, 'show']);
 //Route::delete('/projects/{project}',[ProjectController::class, 'destroy']);
 //Route::put('/projects/{project}',[ProjectController::class, 'update']);
 
+Route::post('/contact-message',[ContactController::class, 'message']);
