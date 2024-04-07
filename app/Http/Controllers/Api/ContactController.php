@@ -15,6 +15,6 @@ class ContactController extends Controller
         $mail= new ContactMessageMail();
         Mail::to(env('MAIL_TO_ADDRESS'))->send($mail);
 
-        return response()->json('ciao');
+        return response(null,204);
     }
 }
