@@ -12,7 +12,7 @@
         font-family: Verdana, sans-serif;
       }
     </style>
-    
+
 </head>
 <body>
     <p>è stato inviato un messaggio</p>
